@@ -1,0 +1,7 @@
+mediapipe==0.10.21
+numpy==2.3.1
+opencv_contrib_python==4.11.0.86
+opencv_python==4.11.0.86
+PyQt6==6.9.1
+pyqt6_sip==13.10.2
+pyinstaller==6.6.0
