@@ -30,10 +30,10 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller --onefile --windowed pose_app.py
+          pyinstaller --noconfirm --onefile --windowed --collect-submodules PyQt6 pose_app.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # ✅ 修正這裡
+        uses: actions/upload-artifact@v4
         with:
           name: pose_app-${{ matrix.os }}
           path: dist/
