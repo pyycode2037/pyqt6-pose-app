@@ -33,7 +33,7 @@ jobs:
           pyinstaller --onefile --windowed pose_app.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # ✅ 修正這裡
         with:
           name: pose_app-${{ matrix.os }}
           path: dist/
